@@ -1,0 +1,37 @@
+@font-face {
+	font-family: fallout;
+	src: url('jh_fallout-webfont.ttf');
+}
+
+body {
+	background-color: #142117;
+}
+
+* {
+	font-family: fallout;
+	color: #0F0;
+}
+
+.center{
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #113d1d;
+	width: 100%;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding: 16px 32px;
+	text-decoration: none;
+}

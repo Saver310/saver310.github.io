@@ -1,8 +1,36 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <title>Saver310's Shithole</title>
-  </head>
-  <body>
-  <h1>Saver310"s Shithole</h1>
-  <p>Hello.</p>
-</body>
+	<head>
+		<title>Saver310's Website</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="center">
+			<h1>Saver310's Website</h1>
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="https://saver310.itch.io">itch.io</a></li>
+				<li><a href="https://github.com/Saver310">GitHub</a></li>
+			</ul>
+			<p id="randomText">Welcome to my very scrappy personal website. </p>
+			<script>
+				var texts = [
+				  "You need %d action points.",
+				  "Out of ammo.",
+				  "Target out of range.",
+				  "Combat cannot end with nearby hostile creatures.",
+				  "You critically missed.",
+				  "You missed.",
+				  "You were hit for %d hit points.",
+				  "You were critically hit for %d hit points.",
+				  "You were hit for 1 hit point.",
+				  "You critically missed and took 1 hit point.",
+				  "You critically missed and took %d hit points."
+				];
+				var paragraph = document.getElementById("randomText");
+				paragraph.textContent += texts[Math.floor(Math.random()*texts.length)].replace("%d", Math.floor(2 + Math.random() * 7));
+			</script>
+		</div>
+	</body>
+</html>
