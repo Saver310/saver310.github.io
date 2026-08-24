@@ -18,6 +18,7 @@
 			</ul>
 			<p id="randomText">Welcome to my very scrappy personal website. </p>
 			<script>
+				<!--https://fallout.wiki/wiki/COMBAT.MSG_(Fallout)#Patch_1.2-0-->
 				var texts = [
 				  "You need %d action points.",
 				  "Out of ammo.",
@@ -25,14 +26,52 @@
 				  "Combat cannot end with nearby hostile creatures.",
 				  "You critically missed.",
 				  "You missed.",
-				  "You were hit for %d hit points.",
-				  "You were critically hit for %d hit points.",
+				  "You were hit for 0 hit points.",
 				  "You were hit for 1 hit point.",
+				  "You were hit for %d hit points.",
+				  "You were critically hit for 0 hit points.",
+				  "You were critically hit for 0 hit points%c",
+				  "You were critically hit for 1 hit point.",
+				  "You were critically hit for 1 hit point%c",
+				  "You were critically hit for %d hit points.",
+				  "You were critically hit for %d hit points%c",
+				  "You critically missed and took 0 hit points.",
+				  "You critically missed and took 0 hit points%c",
 				  "You critically missed and took 1 hit point.",
-				  "You critically missed and took %d hit points."
+				  "You critically missed and took 1 hit point%c",
+				  "You critically missed and took %d hit points.",
+				  "You critically missed and took %d hit points%c"
+				];
+				var crittexts = [
+				  ". You'll have a headache tomorrow, if you live that long.",
+				  ". Your armor provides no protection from this well-aimed blow.",
+				  ". You feel the pain for just a moment, and then darkness takes you...",
+				  ", bypassing your armor. The blow knocks you off your feet.",
+				  ", the shock makes your vision go dark. After a moment, you notice that your vision has not returned.",
+				  ". You get a nice view of your body as your head sails through the air.",
+				  ", stunning you for a moment.",
+				  ". Feel the pain.",
+				  ". The attack leaves your arm useless.",
+				  ", slipping past your armor. The blow cracks the bones in your arm like deadwood.",
+				  ", bypassing your armor. Your arm now hangs limply at your side.",
+				  ". The bruise will look nice, and maybe the scars will make good party talk.",
+				  ", crushing your internal organs. All you can do is gurgle blood.",
+				  ", sending head over heels.",
+				  ", sending you flying and breaking your leg.",
+				  ", melting through your armor. The blow knocks you over and seriously hurts your knee.",
+				  ". The pain from your broken leg sends you into unconsciousness.",
+				  ". The painful blow makes you flinch, but does little else.",
+				  ". Unlucky for you, it also causes immediate vision loss.",
+				  ". It takes you a moment to wipe the blood from your eyes.",
+				  ", slipping past your armor. You stand stunned as your realize you cannot see anymore.",
+				  ". You feel a strange sensation in your head. You realize it's imminent brain-death.",
+				  ", making you cringe.",
+				  ". You cup your groin and fall to the floor in pain.",
+				  ". The pain is sufficient to knock you out. Ouch.",
+				  ". There are not enough words in the universe to describe the pain your are feeling at this moment."
 				];
 				var paragraph = document.getElementById("randomText");
-				paragraph.textContent += texts[Math.floor(Math.random()*texts.length)].replace("%d", Math.floor(2 + Math.random() * 7));
+				paragraph.textContent += texts[Math.floor(Math.random()*texts.length)].replace("%d", Math.floor(2 + Math.random() * 7)).replace("%c",crittexts[Math.floor(Math.random()*crittexts.length)]);
 			</script>
 		</div>
 	</body>
