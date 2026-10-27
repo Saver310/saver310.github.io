@@ -52,6 +52,10 @@ div.gallery-item:hover {
 	border: 4px solid #0F0;
 }
 
+div.gallery-item:not(:hover) {
+    margin: 7px;
+}
+
 div.gallery-item div.desc {
 	padding: 15px;
 	text-align: center;
