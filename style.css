@@ -74,3 +74,22 @@ img.lil_fella {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.project_desc {
+	margin: 12px;
+	width: 80%;
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px double #0F0;
+}
+
+.project_header {
+	font-size: 32px;
+	margin: 2px;
+}
